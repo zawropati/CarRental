@@ -14,3 +14,7 @@ $dark-blue: #1a272e;
 $light-blue: #6d7d8b;
 
 //  General mixins   =============================================================================
+
+@mixin text-centered {
+    text-align: center;
+}
