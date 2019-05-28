@@ -5,7 +5,15 @@
     transition: all .25s ease;
     cursor: pointer;
     border-radius: 3px;
-    font-weight: bold;
+    font-weight: 500;
+    font-family: $font-regular;
+}
+
+.btn-l {
+    padding: 15px;
+    width: 100%;
+    max-width: 250px;
+    font-size: 14px;
 }
 
 .btn-main {

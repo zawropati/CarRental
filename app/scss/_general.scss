@@ -37,8 +37,22 @@ body {
 
 /*  HEADINGS   ============================================================================= */
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 35px;
+}
+
 h2 {
     @include text-centered;
+    font-size: 20px;
 }
 
 .h-inline {
@@ -70,6 +84,7 @@ img {
 .img-round {
     border-radius: 50%;
     background-color: $c-dark;
+    overflow: hidden;
 }
 
 .circle_100 {
@@ -81,10 +96,13 @@ img {
 
 .gutter_l_8 {
     margin-left: 8px;
+    padding-left: 16px;
 }
 
 .gutter_r_8 {
     margin-right: 8px;
+    padding-right: 16px;
+
 }
 
 
@@ -116,21 +134,13 @@ img {
     align-items: center;
 }
 
-/*  ASPECT   ============================================================================= */
-
-.aspect {
-    position: relative;
+.grow_3 {
+    flex-grow: 2;
 }
 
-.aspect_content__1_1 {
-    height: 0;
-    padding-top: 100%;
-}
 
-.aspect_content__inner {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+/*  TEXT   ============================================================================= */
+
+.font__italic {
+    font-style: italic;
 }

@@ -1,4 +1,35 @@
 .card {
     position: relative;
-    padding: 16px;
+}
+
+.partner {
+    padding: 45px;
+}
+
+.card-header {
+    border-bottom: 2px solid $c-dark;
+    padding: 1em 0;
+    margin-bottom: 1em;
+    font-size: 16px;
+
+    i {
+        font-size: 24px;
+        color: $c-sec;
+    }
+}
+
+.card_review {
+    margin-top: 16px;
+
+    & > * {
+        flex-basis: 0;
+    }
+
+    & > .flex-center {
+        flex-grow: 2;
+    }
+
+    & > .card_review__content {
+        flex-grow: 4;
+    }
 }

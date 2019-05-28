@@ -56,22 +56,23 @@
                         <input type="tel" id="cardNumber" placeholder="Card number">
                     </div>
             </div> 
-            <div class="flexWrapper">
-                    <div class="inputGroup">
+            <div class="flex-grid">
+                    <div class="inputGroup grow_3">
                         <label for="expiryDate">Expiry date</label>
-                        <input type="month" id="expiryDate" placeholder="Expiry Date">
+                        <input type="month" id="expiryDate" placeholder="MM/MM">
                     </div>
                     <div class="inputGroup">
                         <label for="CVV">CVV</label>
-                        <input type="text" id="CVV" placeholder="CVV">
+                        <input type="text" id="CVV" placeholder="CVV" pattern="\d*" maxlength="3">
                     </div>
             </div> 
             <div class="flexWrapper">
-                <input type="checkbox" name="vehicle" value="Car"> 
+                <input type="checkbox" name="consent" value="1"> 
                 <p class="terms">I have read and accepted the rental information and the <a class="link" href="www.terms.com">terms and conditions.</a></p>
-            </div>    
-           
-                <button class="loginBtn" @click="submit"> Submit </button>
+            </div>
+            <div class="flex-center">
+                <button class="btn btn-main btn-l" @click="submit"> Submit </button>
+            </div>
         </div>
         </div>
       </div>

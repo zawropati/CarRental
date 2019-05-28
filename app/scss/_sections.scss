@@ -6,6 +6,7 @@
     height: 75px;
     background-color: $c-prim;
     color: $c-light;
+    font-size: 14px;
 
     .container {
         display: flex;
@@ -19,19 +20,11 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    min-height: 50vh;
     color: $c-light;
 }
 
-.form {
-    height: 100px;
-    background-color: $c-light;
-    border-radius: 3px;
-    @include box-shadow;
-}
-
-.overlap_top--50 {
-    margin-top: -50px;
+.overlap_top--80 {
+    margin-top: -80px;
 }
 
 .footer {

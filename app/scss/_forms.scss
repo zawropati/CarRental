@@ -13,6 +13,7 @@
 	@include box-shadow;
 	background-color: $c-light;
 	padding: 2em;
+	border-radius: 3px;
 }
 
 label {
@@ -21,7 +22,7 @@ label {
 }
 
 input {
-	background-color: darken($color: $c-light, $amount: 15);
+	background-color: darken($color: $c-light, $amount: 10);
 	margin-top: 0.5em;
 	display: block;
 	padding: 15px;
@@ -56,7 +57,6 @@ input[type='date'], input[type='month']{
 }
 input[type='tel']{
 	padding-left: 60px;
-	width: 42em;
 	background-image: url('../assets/card.png');
 	background-position: 8px 8px; 
 	background-size: 35px;
