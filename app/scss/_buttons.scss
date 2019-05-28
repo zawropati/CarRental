@@ -5,6 +5,7 @@
     transition: all .25s ease;
     cursor: pointer;
     border-radius: 3px;
+    font-weight: bold;
 }
 
 .btn-main {
@@ -23,7 +24,11 @@
     background-color: transparent;
     &:hover {
         background-color: $c-sec;
-        color: darken($color: $c-sec, $amount: 30);
+        color: $c-light;
         border-color: $c-sec;
     }
+}
+
+.btn-nav {
+    padding: .3em 2.3em;
 }

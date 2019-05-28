@@ -41,6 +41,10 @@ h2 {
     @include text-centered;
 }
 
+.h-inline {
+    display: inline-block;
+}
+
 /*  LINKS   ============================================================================= */
 
 a {
@@ -52,12 +56,52 @@ a {
     display: inline-block;
 }
 
+/*  IMAGES   ============================================================================= */
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.img {
+    position: relative;
+}
+
+.img-round {
+    border-radius: 50%;
+    background-color: $c-dark;
+}
+
+.circle_100 {
+    width: 100px;
+    height: 100px;
+}
+
+/*  GUTTERS   ============================================================================= */
+
+.gutter_l_8 {
+    margin-left: 8px;
+}
+
+.gutter_r_8 {
+    margin-right: 8px;
+}
+
+
+
 /*  FLEX   ============================================================================= */
 
+.flex,
 .flex-grid,
-.flex-row {
+.flex-center {
     display: flex;
     position: relative;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .flex-grid {
@@ -67,7 +111,7 @@ a {
     }
 }
 
-.flex-row {
+.flex-center {
     justify-content: center;
     align-items: center;
 }

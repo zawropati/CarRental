@@ -15,16 +15,23 @@
 }
 
 .hero {
-    background-color: $c-dark;
+    background: url('../media/hero_car_rental.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 35vh;
     color: $c-light;
 }
 
 .form {
     height: 100px;
-    margin-top: -25px;
     background-color: $c-light;
     border-radius: 3px;
     @include box-shadow;
+}
+
+.overlap_top--25 {
+    margin-top: -25px;
 }
 
 .footer {
