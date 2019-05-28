@@ -1,3 +1,7 @@
+.section {
+    position: relative;
+}
+
 .header {
     height: 75px;
     background-color: $c-prim;
@@ -13,6 +17,14 @@
 .hero {
     background-color: $c-dark;
     color: $c-light;
+}
+
+.form {
+    height: 100px;
+    margin-top: -25px;
+    background-color: $c-light;
+    border-radius: 3px;
+    @include box-shadow;
 }
 
 .footer {

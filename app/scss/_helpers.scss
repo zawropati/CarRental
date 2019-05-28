@@ -27,3 +27,8 @@ $c-black: #131313;
 @mixin text-centered {
     text-align: center;
 }
+
+@mixin box-shadow {
+    box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.2),
+      0 4px 12px 0 rgba(0, 0, 0, 0.12);
+  }
