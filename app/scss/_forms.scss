@@ -1,55 +1,50 @@
-
-// Color vars ======================================
-
-$grey: #72747a;
-$orange: #da602d;
-$dirty-white: #e9edef;
-$dark-blue: #1a272e;
-$light-blue: #6d7d8b;
-
-@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
-$font-regular: 'Poppins', sans-serif;
-
-//  General mixins   =============================================================================
 .flexWrapper {
 	display: flex;
 	flex-direction: row;
 }
+
 .flexWrapperColumn {
 	display: flex;
 	flex-direction: column;
 }
+
 .formBox {
 	font-family: $font-regular;
-	box-shadow: 5px 5px 15px 1px rgba(0,0,0,0.2);
-	display: inline-block;
+	@include box-shadow;
+	background-color: $c-light;
 	padding: 2em;
 }
+
 label {
-	color: $dark-blue;
+	color: $c-prim;
 	text-transform: uppercase;
 }
+
 input {
-	background: $dirty-white;
-	margin-right: 1em;
+	background-color: darken($color: $c-light, $amount: 15);
 	margin-top: 0.5em;
 	display: block;
 	padding: 15px;
 	font-size: 14px;
 	border-radius: 4px;
-	width: 20em;
+	width: 100%;
 	border: none;
-	color: $dark-blue;
+	color: $c-prim;
 	cursor: pointer;
+	transition: all .25s ease;
+
+	&:focus {
+		border-color: 1px solid green;
+	}
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-	color: $dark-blue;
+	color: $c-prim;
 	opacity: 1; /* Firefox */
-  }
+}
+
 .inputGroup {
 	margin: 0.5em;
-	display: inline-block;
 }
 
 input[type='date'], input[type='month']{
@@ -75,13 +70,13 @@ input[type='checkbox']{
 .terms{
 	margin: 1em;
 	font-size: 12px;
-	color: $dark-blue;
+	color: $c-prim;
 }
 .link{
-	color: $orange;
+	color: $c-sec;
 }
 .searchBtn{
-	background: $orange;
+	background: $c-sec;
 	color: white;
 	border: none;
 	text-transform: uppercase;
@@ -93,7 +88,7 @@ input[type='checkbox']{
 }
 .loginBtn{
 	margin: 0 auto;	
-	background: $orange;
+	background: $c-sec;
 	color: white;
 	border: none;
 	text-transform: uppercase;

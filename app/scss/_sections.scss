@@ -19,7 +19,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    min-height: 35vh;
+    min-height: 50vh;
     color: $c-light;
 }
 
@@ -30,8 +30,8 @@
     @include box-shadow;
 }
 
-.overlap_top--25 {
-    margin-top: -25px;
+.overlap_top--50 {
+    margin-top: -50px;
 }
 
 .footer {

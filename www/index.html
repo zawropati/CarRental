@@ -23,8 +23,36 @@
             </div>
         </section>
         <section class="section">
-            <div class="container form overlap_top--25">
-                FORM
+            <div class="container overlap_top--50">
+                <div class="formBox">
+                    <div class="flex-grid">
+                        <div class="inputGroup">
+                            <label class="label" for="country">Country</label>
+                            <input type="text" id="country" placeholder="Country">
+                        </div>
+                        <div class="inputGroup">
+                            <label for="city">City</label>
+                            <input type="text" id="city" placeholder="City">
+                        </div>
+                        <div class="inputGroup">
+                            <label for="location">Location</label>
+                            <input type="text" id="location" placeholder="Location">
+                        </div>
+                    </div>
+                    <div class="flex-grid">
+                        <div class="inputGroup">
+                            <label for="pickup">Pickup</label>
+                            <input type="date" id="pickup" placeholder="Pickup">
+                        </div>
+                        <div class="inputGroup">
+                            <label for="return">Return</label>
+                            <input type="date" id="return" placeholder="Return">
+                        </div>
+                        <div class="inputGroup">
+                            <button class="btn btn-main btn-form" @click="submit"> Search </button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="section">
