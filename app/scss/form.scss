@@ -1,0 +1,105 @@
+
+// Color vars ======================================
+
+$grey: #72747a;
+$orange: #da602d;
+$dirty-white: #e9edef;
+$dark-blue: #1a272e;
+$light-blue: #6d7d8b;
+
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+$font-regular: 'Poppins', sans-serif;
+
+//  General mixins   =============================================================================
+.flexWrapper {
+	display: flex;
+	flex-direction: row;
+}
+.flexWrapperColumn {
+	display: flex;
+	flex-direction: column;
+}
+.formBox {
+	font-family: $font-regular;
+	box-shadow: 5px 5px 15px 1px rgba(0,0,0,0.2);
+	display: inline-block;
+	padding: 2em;
+}
+label {
+	color: $dark-blue;
+	text-transform: uppercase;
+}
+input {
+	background: $dirty-white;
+	margin-right: 1em;
+	margin-top: 0.5em;
+	display: block;
+	padding: 15px;
+	font-size: 14px;
+	border-radius: 4px;
+	width: 20em;
+	border: none;
+	color: $dark-blue;
+	cursor: pointer;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: $dark-blue;
+	opacity: 1; /* Firefox */
+  }
+.inputGroup {
+	margin: 0.5em;
+	display: inline-block;
+}
+
+input[type='date'], input[type='month']{
+	padding-left: 60px;
+	background-image: url('../assets/icons8-calendar-11-50.png');
+	background-position: 8px 8px; 
+	background-size: 35px;
+	background-repeat: no-repeat;
+}
+input[type='tel']{
+	padding-left: 60px;
+	width: 42em;
+	background-image: url('../assets/card.png');
+	background-position: 8px 8px; 
+	background-size: 35px;
+	background-repeat: no-repeat;
+}
+input[type='checkbox']{
+	width: 25px;
+	margin: 1em;
+	padding: 0;
+}
+.terms{
+	margin: 1em;
+	font-size: 12px;
+	color: $dark-blue;
+}
+.link{
+	color: $orange;
+}
+.searchBtn{
+	background: $orange;
+	color: white;
+	border: none;
+	text-transform: uppercase;
+	margin-top: 2.35em;
+	padding: 15px;
+	font-size: 14px;
+	border-radius: 4px;
+	width: 20em;
+}
+.loginBtn{
+	margin: 0 auto;	
+	background: $orange;
+	color: white;
+	border: none;
+	text-transform: uppercase;
+	margin-top: 1em;
+	padding: 15px;
+	font-size: 14px;
+	border-radius: 4px;
+	width: 20em;
+}
