@@ -23,6 +23,7 @@ body {
     border: 0;
 	outline: 0;
     -ms-overflow-style: scrollbar;
+    font-family: sans-serif;
 }
 
 body {
@@ -34,4 +35,60 @@ body {
     font-size: 0.9em;
     line-height: 1.5em;
     -webkit-font-smoothing: antialiased;
+}
+
+/*  HEADINGS   ============================================================================= */
+
+h2 {
+    @include text-centered;
+}
+
+/*  LINKS   ============================================================================= */
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+.a-block {
+    display: inline-block;
+}
+
+/*  FLEX   ============================================================================= */
+
+.flex-grid,
+.flex-row {
+    display: flex;
+    position: relative;
+}
+
+.flex-grid {
+    & > * {
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+}
+
+.flex-row {
+    justify-content: center;
+    align-items: center;
+}
+
+/*  ASPECT   ============================================================================= */
+
+.aspect {
+    position: relative;
+}
+
+.aspect_content__1_1 {
+    height: 0;
+    padding-top: 100%;
+}
+
+.aspect_content__inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }

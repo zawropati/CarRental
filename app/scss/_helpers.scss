@@ -12,3 +12,7 @@ $c-sec: #F59414;
 $c-terc: #222222;
 
 //  General mixins   =============================================================================
+
+@mixin text-centered {
+    text-align: center;
+}
