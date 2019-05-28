@@ -1,3 +1,20 @@
 .header {
     height: 75px;
+    background-color: $c-prim;
+    color: $c-light;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.hero {
+    background-color: $c-dark;
+    color: $c-light;
+}
+
+.footer {
+    background-color: $c-prim;
 }

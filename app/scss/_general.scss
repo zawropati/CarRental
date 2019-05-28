@@ -8,10 +8,6 @@
     -moz-box-sizing: border-box;
 }
 
-* {
-    border: 1px solid red;
-}
-
 :focus {
     outline: none;
 }
@@ -35,6 +31,8 @@ body {
     font-size: 0.9em;
     line-height: 1.5em;
     -webkit-font-smoothing: antialiased;
+    background-color: $c-light;
+    color: $c-black;
 }
 
 /*  HEADINGS   ============================================================================= */

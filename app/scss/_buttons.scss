@@ -1,0 +1,29 @@
+
+
+.btn {
+    display: inline-block;
+    transition: all .25s ease;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.btn-main {
+    background-color: $c-sec;
+    color: $c-light;
+    border: 2px solid $c-sec;
+    &:hover {
+        background-color: darken($color: $c-sec, $amount: 15);
+        border-color: darken($color: $c-sec, $amount: 15);
+    }
+}
+
+.btn-sec {
+    color: $c-sec;
+    border: 2px solid $c-sec;
+    background-color: transparent;
+    &:hover {
+        background-color: $c-sec;
+        color: darken($color: $c-sec, $amount: 30);
+        border-color: $c-sec;
+    }
+}
