@@ -35,6 +35,10 @@ body {
     color: $c-black;
 }
 
+main {
+    margin-top: 75px;
+}
+
 /*  HEADINGS   ============================================================================= */
 
 h1,
@@ -68,6 +72,10 @@ a {
 
 .a-block {
     display: inline-block;
+}
+
+.logo {
+    font-size: 20px;
 }
 
 /*  IMAGES   ============================================================================= */
@@ -138,9 +146,43 @@ img {
     flex-grow: 2;
 }
 
+/*  GRID   ============================================================================= */
+
+.grid {
+    display: grid;
+    grid-gap: 1em;
+}
+
+.grid_8_4 {
+    grid-template-columns: 8fr 4fr;
+}
+
 
 /*  TEXT   ============================================================================= */
 
 .font__italic {
     font-style: italic;
+}
+
+.breadcrum {
+    position: relative;
+    display: inline-block;
+    padding: 1em;
+    cursor: pointer;
+
+    .breadcrum__num {
+        display: inline-flex;
+        font-weight: 500;
+        justify-content: center;
+        align-items: center;
+        width: 20px;
+        height: 20px;
+        margin-right: 1em;
+        background-color: $c-sec;
+        border-radius: 50%;
+    }
+
+    &:first-of-type {
+        padding-left: 0;
+    }
 }

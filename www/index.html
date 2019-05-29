@@ -15,114 +15,122 @@
     <div class="wrapper">
         <header class="header">
             <div class="container">
-                <div class="logo">LOGO</div>
+                <div class="logo">
+                    <a class="logo" href="index.html">
+                        <i class="fas fa-car"></i> Rental
+                    </a>
+                </div>
                 <div class="btn btn-main btn-nav">Login</div>
             </div>
         </header>
-        <section class="section hero">
-            <div class="container inner--top inner--bottom-big">
-                <h1 class="h1-hero">Rent a car fast, easy, in style</h1>
-            </div>
-        </section>
-        <section class="section">
-            <div class="container overlap_top--80 inner--bottom">
-                <div class="formBox">
-                    <div class="flex-grid">
-                        <div class="inputGroup">
-                            <label class="label" for="country">Country</label>
-                            <input type="text" id="country" placeholder="Country">
-                        </div>
-                        <div class="inputGroup">
-                            <label for="city">City</label>
-                            <input type="text" id="city" placeholder="City">
-                        </div>
-                        <div class="inputGroup">
-                            <label for="location">Location</label>
-                            <input type="text" id="location" placeholder="Location">
-                        </div>
-                    </div>
-                    <div class="flex-grid">
-                        <div class="inputGroup">
-                            <label for="pickup">Pickup</label>
-                            <input type="date" id="pickup" placeholder="Pickup">
-                        </div>
-                        <div class="inputGroup">
-                            <label for="return">Return</label>
-                            <input type="date" id="return" placeholder="Return">
-                        </div>
-                        <div class="inputGroup">
-                            <button class="btn btn-main btn-form" @click="submit"> Search </button>
-                        </div>
-                    </div>
+        <main>
+            <section class="section hero">
+                <div class="container inner--top inner--bottom-big">
+                    <h1 class="h1-hero">Rent a car fast, easy, in style</h1>
                 </div>
-            </div>
-        </section>
-        <section class="section inner--bottom">
-            <div class="container inner inner--bottom">
-                <div class="col span_1_of_2_sm">
-                    <div class="card gutter_r_8">
-                        <div class="card-header flex">
-                            <h4>RatingPilot</h4>
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
+            </section>
+            <section class="section">
+                <div class="container overlap_top--80 inner--bottom">
+                    <div class="formBox form-index">
+                        <div class="flex-grid">
+                            <div class="inputGroup">
+                                <label class="label" for="country">Country</label>
+                                <input type="text" id="country" placeholder="Country">
+                            </div>
+                            <div class="inputGroup">
+                                <label for="city">City</label>
+                                <input type="text" id="city" placeholder="City">
+                            </div>
+                            <div class="inputGroup">
+                                <label for="location">Location</label>
+                                <input type="text" id="location" placeholder="Location">
                             </div>
                         </div>
-                        <div class="card-body">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ducimus praesentium, dolor
-                            suscipit vero quisquam nobis, voluptate totam molestiae voluptatem harum quaerat beatae
-                            eveniet perspiciatis voluptatum nesciunt? Officia, illum alias?
-                        </div>
-                    </div>
-                </div>
-                <div class="col span_1_of_2_sm">
-                    <div class="card card_review gutter_l_8 flex">
-                        <div class="flex-center">
-                            <div class="img-round img circle_100 flex-center">
-                                <img src="./media/user_profile.jpg" alt="Jon Deo">
+                        <div class="flex-grid">
+                            <div class="inputGroup">
+                                <label for="pickup">Pickup</label>
+                                <input type="date" id="pickup" placeholder="Pickup">
+                            </div>
+                            <div class="inputGroup">
+                                <label for="return">Return</label>
+                                <input type="date" id="return" placeholder="Return">
+                            </div>
+                            <div class="inputGroup">
+                                <button id="searchBtn" class="btn btn-main btn-form"> Search </button>
                             </div>
                         </div>
-                        <div class="card_review__content">
-                            <h4>Jon Doe</h4>
-                            <p class="font__italic">"Lorem ipsum dolor sit amet consectetur adipisicing elit."</p>
+                    </div>
+                </div>
+            </section>
+            <section class="section inner--bottom">
+                <div class="container inner inner--bottom">
+                    <div class="col span_1_of_2_sm">
+                        <div class="card gutter_r_8">
+                            <div class="card-header flex">
+                                <h4>RatingPilot</h4>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ducimus praesentium,
+                                dolor
+                                suscipit vero quisquam nobis, voluptate totam molestiae voluptatem harum quaerat beatae
+                                eveniet perspiciatis voluptatum nesciunt? Officia, illum alias?
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col span_1_of_2_sm">
+                        <div class="card card_review gutter_l_8 flex">
+                            <div class="flex-center">
+                                <div class="img-round img circle_100 flex-center">
+                                    <img src="./media/user_profile.jpg" alt="Jon Deo">
+                                </div>
+                            </div>
+                            <div class="card_review__content">
+                                <h4>Jon Doe</h4>
+                                <p class="font__italic">"Lorem ipsum dolor sit amet consectetur adipisicing elit."</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="container inner--bottom inner--top-small">
-                <h2>Our trusted partners</h2>
-            </div>
-            <div class="container flex-center">
-                <a href="" class="a-block partner">
-                    <div class="img"><img src="./media/avis_logo.jpg" alt="AVIS"></div>
-                </a>
-                <a href="" class="a-block partner">
-                    <div class="img"><img src="./media/avis_logo.jpg" alt="AVIS"></div>
-                </a>
-                <a href="" class="a-block partner">
-                    <div class="img"><img src="./media/avis_logo.jpg" alt="AVIS"></div>
-                </a>
-                <a href="" class="a-block partner">
-                    <div class="img"><img src="./media/avis_logo.jpg" alt="AVIS"></div>
-                </a>
-                <a href="" class="a-block partner">
-                    <div class="img"><img src="./media/avis_logo.jpg" alt="AVIS"></div>
-                </a>
-                <a href="" class="a-block partner">
-                    <div class="img"><img src="./media/avis_logo.jpg" alt="AVIS"></div>
-                </a>
-            </div>
-        </section>
+                <div class="container inner--bottom inner--top-small">
+                    <h2>Our trusted partners</h2>
+                </div>
+                <div class="container flex-center">
+                    <a href="" class="a-block partner">
+                        <div class="img"><img src="./media/avis_logo.jpg" alt="AVIS"></div>
+                    </a>
+                    <a href="" class="a-block partner">
+                        <div class="img"><img src="./media/avis_logo.jpg" alt="AVIS"></div>
+                    </a>
+                    <a href="" class="a-block partner">
+                        <div class="img"><img src="./media/avis_logo.jpg" alt="AVIS"></div>
+                    </a>
+                    <a href="" class="a-block partner">
+                        <div class="img"><img src="./media/avis_logo.jpg" alt="AVIS"></div>
+                    </a>
+                    <a href="" class="a-block partner">
+                        <div class="img"><img src="./media/avis_logo.jpg" alt="AVIS"></div>
+                    </a>
+                    <a href="" class="a-block partner">
+                        <div class="img"><img src="./media/avis_logo.jpg" alt="AVIS"></div>
+                    </a>
+                </div>
+            </section>
+        </main>
         <footer class="footer">
             <div class="container">
                 FOOTER
             </div>
         </footer>
     </div>
-    <script src="app.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./js/app.min.js"></script>
 </body>
 
 </html>

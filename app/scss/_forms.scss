@@ -10,10 +10,21 @@
 
 .formBox {
 	font-family: $font-regular;
-	@include box-shadow;
 	background-color: $c-light;
 	padding: 2em;
 	border-radius: 3px;
+}
+
+.form-index {
+	@include box-shadow;
+}
+
+.form-darker {
+	background-color: darken($color: $c-light, $amount: 5);
+
+	input {
+		background-color: darken($color: $c-light, $amount: 15);
+	}
 }
 
 label {

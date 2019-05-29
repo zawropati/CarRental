@@ -2,11 +2,26 @@
     position: relative;
 }
 
+.section-dark,
+.section-dark .formBox {
+    background-color: lighten($color: $c-prim, $amount: 8);
+    color: $c-light;
+
+    .formBox label {
+        color: $c-light;
+    }
+}
+
 .header {
     height: 75px;
     background-color: $c-prim;
     color: $c-light;
     font-size: 14px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
 
     .container {
         display: flex;
@@ -25,6 +40,18 @@
 
 .overlap_top--80 {
     margin-top: -80px;
+}
+
+.bar {
+    padding: 1em;
+    background-color: darken($color: $c-light, $amount: 5);
+    border-bottom: 2px solid darken($color: $c-light, $amount: 40);
+    color: darken($c-dark, 10);
+
+    span {
+        font-weight: 500;
+        color: darken($color: $c-dark, $amount: 40);
+    }
 }
 
 .footer {
