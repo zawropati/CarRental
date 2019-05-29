@@ -157,6 +157,26 @@ img {
     grid-template-columns: 8fr 4fr;
 }
 
+/*  ASPECT   ============================================================================= */
+
+.aspect {
+    position: relative;
+}
+
+.aspect_content__1_1 {
+    position: relative;
+    height: 0;
+    padding-top: 100%;
+}
+
+.aspect_content__inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
 
 /*  TEXT   ============================================================================= */
 
@@ -180,9 +200,18 @@ img {
         margin-right: 1em;
         background-color: $c-sec;
         border-radius: 50%;
+
+        &.bread__disabled {
+            background-color: transparent;
+        }
     }
 
     &:first-of-type {
         padding-left: 0;
     }
+}
+
+.bread__disabled {
+    color: lighten($color: $c-dark, $amount: 10);
+    cursor: default;
 }
