@@ -37,23 +37,33 @@
 .car_content {
     padding: 2em;
 
-    .car-item {
-        color: $c-dark;
-        display: grid;
-        grid-template-columns: 2fr 10fr;
-
-        i {
-            font-size: 18px;
-        }
-
-        p {
-            margin: 0;
-        }
-
-        &:not(:last-of-type) {
-            margin-bottom: 1em;
-        }
+    .car_column & {
+        padding: 1em;
+        border-bottom: 2px solid darken($color: $c-light, $amount: 40);
     }
+}
+
+.car-item {
+    color: $c-dark;
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+
+    i {
+        font-size: 18px;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    &:not(:last-of-type) {
+        margin-bottom: 1em;
+    }
+}
+
+.car_extras {
+    padding: 1em;
+    color: $c-dark;    
 }
 
 

@@ -59,6 +59,10 @@ h2 {
     font-size: 20px;
 }
 
+h4 {
+    font-size: 16px;
+}
+
 .h-inline {
     display: inline-block;
 }
@@ -130,11 +134,16 @@ img {
     align-items: center;
 }
 
-.flex-grid {
+.flex-grid,
+.flex-col {
     & > * {
         flex-basis: 0;
         flex-grow: 1;
     }
+}
+
+.flex-col {
+    flex-direction: column;
 }
 
 .flex-center {
@@ -150,7 +159,7 @@ img {
 
 .grid {
     display: grid;
-    grid-gap: 1em;
+    grid-gap: 2em;
 }
 
 .grid_8_4 {

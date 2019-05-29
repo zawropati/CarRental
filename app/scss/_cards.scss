@@ -10,6 +10,14 @@
     margin-bottom: 3em;
 }
 
+.card_upsell {
+    background-color: darken($color: $c-light, $amount: 5);
+
+    &:not(:first-of-type) {
+        margin-top: 3em;
+    }
+}
+
 .partner {
     padding: 45px;
 }
@@ -39,5 +47,30 @@
 
     & > .card_review__content {
         flex-grow: 4;
+    }
+}
+
+.upsell_header {
+    padding: 1em;
+    background-color: darken($color: $c-light, $amount: 10);
+}
+
+.upsell_subheader {
+    padding: 1em;
+    @include border-bot;
+
+    p {
+        margin-top: 0;
+    }
+
+    a {
+        color: $c-sec;
+    }
+}
+
+.upsell_content {
+    padding: 1.5em 1em;
+    .terms {
+        font-size: 14px;
     }
 }

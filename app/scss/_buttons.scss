@@ -47,3 +47,27 @@
     padding: 13px;
     font-size: 14px;
 }
+
+.btn-car {
+    display: flex;
+    justify-content: center;
+    padding: 13px;
+}
+
+.upsell_cta {
+    margin-top: 2em;
+
+    .btn {
+        display: block;
+        text-align: center;
+        padding: 13px;
+    }
+
+    .btn:first-of-type {
+        margin-right: 1em;
+    }
+
+    .btn:last-of-type {
+        margin-left: 1em;
+    }
+}

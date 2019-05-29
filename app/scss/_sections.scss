@@ -6,6 +6,7 @@
 .section-dark .formBox {
     background-color: lighten($color: $c-prim, $amount: 8);
     color: $c-light;
+    padding-top: 0;
 
     .formBox label {
         color: $c-light;

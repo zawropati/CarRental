@@ -28,3 +28,11 @@ $c-black: #131313;
     box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.2),
       0 4px 12px 0 rgba(0, 0, 0, 0.12);
   }
+
+.border-bot {
+    border-bottom: 2px solid darken($color: $c-light, $amount: 40);
+}
+
+@mixin border-bot {
+    border-bottom: 2px solid darken($color: $c-light, $amount: 40);
+}
