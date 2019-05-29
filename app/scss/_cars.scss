@@ -1,0 +1,28 @@
+.col{
+    .car-heading{
+        margin: 8px;
+        padding: 16px;
+    }
+    .flex-car{
+        .car-img{
+            width: 25%;
+        }
+        .car-view-more{
+            color: $c-sec;
+            cursor: pointer;
+        }
+    }
+    
+    .car-total-price{
+        @include text-centered;
+        .btn-car{
+            padding: .3em 2.3em;
+        }
+        .price-total{
+            font-weight: 500;
+        }
+    }
+    
+}
+
+
