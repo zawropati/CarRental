@@ -34,6 +34,16 @@
     }
 }
 
+.car_column {
+    h5 {
+        margin-bottom: 1em;
+    }
+
+    p {
+        margin: .2em 0;
+    }
+}
+
 .car_content {
     padding: 2em;
 
@@ -50,6 +60,9 @@
 
     i {
         font-size: 18px;
+        display: inline-block;
+        margin-right: 8px;
+        min-width: 1.2em;
     }
 
     p {
@@ -63,7 +76,12 @@
 
 .car_extras {
     padding: 1em;
-    color: $c-dark;    
 }
 
+.car_summary {
+    padding: 1em;
 
+    .link {
+        margin-top: 1.5em;
+    }
+}

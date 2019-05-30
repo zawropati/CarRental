@@ -18,7 +18,7 @@
                 <a class="logo" href="index.html">
                     <i class="fas fa-car"></i> Rental
                 </a>
-                <div class="btn btn-main btn-nav">Login</div>
+                <div class="profile">Jon Doe <i class="fas fa-user"></i></div>
             </div>
         </header>
     </div>
@@ -43,41 +43,41 @@
                             <div class="flex-grid">
                                 <div class="inputGroup">
                                     <label for="firstName">First name</label>
-                                    <input type="text" id="firstName" placeholder="First name">
+                                    <input type="text" id="firstName" value="Jon">
                                 </div>
                                 <div class="inputGroup">
                                     <label for="lastName">Last name</label>
-                                    <input type="text" id="lastName" placeholder="Last name">
+                                    <input type="text" id="lastName" value="Doe">
                                 </div>
                             </div>
                             <div class="flex-grid">
                                 <div class="inputGroup">
                                     <label for="email">email</label>
-                                    <input type="email" id="email" placeholder="Email">
+                                    <input type="email" id="email" value="jon.doe@mail.com">
                                 </div>
                                 <div class="inputGroup">
                                     <label for="birthdate">Birthdate</label>
-                                    <input type="date" id="birthdate" placeholder="Birthdate">
+                                    <input type="date" id="birthdate" value="1985-03-09">
                                 </div>
                             </div>
                             <div class="flex-grid">
                                 <div class="inputGroup">
                                     <label for="phoneNumber">Phone Number</label>
-                                    <input type="text" id="phoneNumber" placeholder="Number">
+                                    <input type="text" id="phoneNumber" value="+4599887766">
                                 </div>
                                 <div class="inputGroup">
                                     <label for="Address">Address</label>
-                                    <input type="text" id="Address" placeholder="Address">
+                                    <input type="text" id="Address" value="Street 12">
                                 </div>
                             </div>
                             <div class="flex-grid">
                                 <div class="inputGroup">
                                     <label for="City">City</label>
-                                    <input type="text" id="City" placeholder="City">
+                                    <input type="text" id="City" value="Copehagen">
                                 </div>
                                 <div class="inputGroup">
                                     <label for="ZipCode">Zip Code</label>
-                                    <input type="text" id="ZipCode" placeholder="Zip Code">
+                                    <input type="text" id="ZipCode" value="2200">
                                 </div>
                             </div>
                             <div class="inputGroup">
@@ -86,26 +86,26 @@
                             <div class="flex-grid">
                                 <div class="inputGroup">
                                     <label for="cardNumber">Card number</label>
-                                    <input type="tel" id="cardNumber" placeholder="Card number">
+                                    <input type="tel" id="cardNumber" value="1111222233334444">
                                 </div>
                             </div>
                             <div class="flex-grid">
                                 <div class="inputGroup grow_3">
                                     <label for="expiryDate">Expiry date</label>
-                                    <input type="month" id="expiryDate" placeholder="MM/MM">
+                                    <input type="month" id="expiryDate" value="2022-02">
                                 </div>
                                 <div class="inputGroup">
                                     <label for="CVV">CVV</label>
-                                    <input type="text" id="CVV" placeholder="CVV" pattern="\d*" maxlength="3">
+                                    <input type="text" id="CVV" placeholder="CVV" value="123" maxlength="3">
                                 </div>
                             </div>
                             <div class="flexWrapper">
-                                <input type="checkbox" name="consent" value="1">
-                                <p class="terms">I have read and accepted the rental information and the <a class="link"
-                                        href="www.terms.com">terms and conditions.</a></p>
+                                <input type="checkbox" id="consent" name="consent" value="1">
+                                <label for="consent" class="terms">I have read and accepted the rental information and
+                                    the <a class="link" href="www.terms.com">terms and conditions.</a></label>
                             </div>
                             <div class="flex-center">
-                                <button class="btn btn-main btn-l" @click="submit"> Submit </button>
+                                <button class="btn btn-main btn-l" onclick="showModal()"> Make reservation </button>
                             </div>
                         </div>
                     </div>
@@ -134,42 +134,64 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="">
-                            <div class="car_content flex-grid">
-                                <div>
-                                    <div class="car-item"><i class="fas fa-users"></i>
-                                        <p><span>5</span> Passengers</p>
-                                    </div>
-                                    <div class="car-item"><i class="far fa-snowflake"></i>
-                                        <p>A/C included</p>
-                                    </div>
-                                    <div class="car-item"><i class="fas fa-cogs"></i>
-                                        <p>Automatic</p>
-                                    </div>
-                                    <div class="car-item"><i class="fas fa-gas-pump"></i>
-                                        <p>Electric</p>
-                                    </div>
+                        <div class="car_column">
+                            <div class="car_content">
+                                <h5>Car info</h5>
+                                <div class="flex">
+                                    <p>Vehicle subtotal</p>
+                                    <p class="strong">550 DKK</p>
                                 </div>
-                                <div>
-                                    <div class="car-item"><i class="fas fa-info-circle"></i>
-                                        <p>Relevant info</p>
-                                    </div>
-                                    <div class="car-item"><i class="fas fa-info-circle"></i>
-                                        <p>Relevant info</p>
-                                    </div>
-                                    <div class="car-item"><i class="fas fa-info-circle"></i>
-                                        <p>Relevant info</p>
-                                    </div>
-                                    <div class="car-item"><i class="fas fa-info-circle"></i>
-                                        <p>Relevant info</p>
-                                    </div>
+                            </div>
+                            <div class="car_extras border-bot">
+                                <h5>Extras</h5>
+                                <div class="flex protection">
+                                    <p>Protection</p>
+                                    <p class="strong">100 DKK</p>
                                 </div>
+                                <div class="flex addons">
+                                    <p>Addons</p>
+                                    <p class="strong">200 DKK</p>
+                                </div>
+                                <div class="flex safety">
+                                    <p>Safety</p>
+                                    <p class="strong">300 DKK</p>
+                                </div>
+                            </div>
+                            <div class="car_summary">
+                                <h5>Summary</h5>
+                                <div class="flex">
+                                    <p>Total</p>
+                                    <p class="strong"><span id="total">1150</span> DKK</p>
+                                </div>
+                                <a href="#" class="a-block link">Terms and conditions</a>
                             </div>
                         </div>
                     </div>
                 </aside>
             </div>
         </section>
+        <div class="modalContainer">
+            <div class="greyLayer" onclick="closeModal()">
+            </div>
+            <div id="modal" class="modal card">
+                <div class="modal-center">
+                    <h4>Your reservation has been successful.</h4>
+                    <div class="modal-svg border-bot">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 132">
+                            <circle class="path circle" fill="none" stroke="#A3E062" stroke-width="7"
+                                stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1" />
+                            <polyline class="path check" fill="none" stroke="#A3E062" stroke-width="7"
+                                stroke-linecap="round" stroke-miterlimit="10"
+                                points="100.2,40.2 51.5,88.8 29.8,67.5 " />
+                        </svg>
+                    </div>
+                    <div>
+                        <p>Confirmation E-mail has been sent to your E-mail address.</p>
+                        <a href="index.html" class="btn btn-sec">Go back Home</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./js/app.min.js"></script>

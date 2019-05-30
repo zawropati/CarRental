@@ -39,6 +39,10 @@ main {
     margin-top: 75px;
 }
 
+.hidden {
+    display: none !important;
+}
+
 /*  HEADINGS   ============================================================================= */
 
 h1,
@@ -63,6 +67,10 @@ h4 {
     font-size: 16px;
 }
 
+h5 {
+    font-size: 15px;
+}
+
 .h-inline {
     display: inline-block;
 }
@@ -74,12 +82,27 @@ a {
     color: currentColor;
 }
 
+.link {
+    color: $c-sec;
+}
+
 .a-block {
     display: inline-block;
 }
 
 .logo {
     font-size: 20px;
+}
+
+.profile {
+    color: darken($color: $c-light, $amount: 10);
+
+    i {
+        color: $c-light;
+        display: inline-block;
+        margin-left: 1em;
+        font-size: 20px;
+    }
 }
 
 /*  IMAGES   ============================================================================= */
@@ -123,7 +146,8 @@ img {
 
 .flex,
 .flex-grid,
-.flex-center {
+.flex-center,
+.flex-col {
     display: flex;
     position: relative;
 }
@@ -193,6 +217,10 @@ img {
     font-style: italic;
 }
 
+.strong {
+    font-weight: 500;
+}
+
 .breadcrum {
     position: relative;
     display: inline-block;
@@ -224,3 +252,34 @@ img {
     color: lighten($color: $c-dark, $amount: 10);
     cursor: default;
 }
+
+/*  SVGS   ============================================================================= */
+
+svg {
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+.path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 0;
+
+    &.circle {
+        -webkit-animation: dash .9s ease-in-out;
+        animation: dash .9s ease-in-out;
+    }
+
+    &.line {
+        stroke-dashoffset: 1000;
+        -webkit-animation: dash .9s .35s ease-in-out forwards;
+        animation: dash .9s .35s ease-in-out forwards;
+    }
+
+    &.check {
+        stroke-dashoffset: -100;
+        -webkit-animation: dash-check .9s .35s ease-in-out forwards;
+        animation: dash-check .9s .35s ease-in-out forwards;
+    }
+}
+

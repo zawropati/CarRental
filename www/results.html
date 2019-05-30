@@ -18,7 +18,7 @@
                 <a class="logo" href="index.html">
                     <i class="fas fa-car"></i> Rental
                 </a>
-                <div class="btn btn-main btn-nav">Login</div>
+                <div class="profile">Jon Doe <i class="fas fa-user"></i></div>
             </div>
         </header>
         <main>
@@ -37,28 +37,28 @@
                         <div class="flex-grid">
                             <div class="inputGroup">
                                 <label class="label" for="country">Country</label>
-                                <input type="text" id="country" placeholder="Country">
+                                <input type="text" id="country" value="Denmark">
                             </div>
                             <div class="inputGroup">
                                 <label for="city">City</label>
-                                <input type="text" id="city" placeholder="City">
+                                <input type="text" id="city" value="Copenhagen">
                             </div>
                             <div class="inputGroup">
                                 <label for="location">Location</label>
-                                <input type="text" id="location" placeholder="Location">
+                                <input type="text" id="location" value="CPH Airport">
                             </div>
                         </div>
                         <div class="flex-grid">
                             <div class="inputGroup">
                                 <label for="pickup">Pickup</label>
-                                <input type="date" id="pickup" placeholder="Pickup">
+                                <input type="date" id="pickup" placeholder="Pickup" value="2019-06-10">
                             </div>
                             <div class="inputGroup">
                                 <label for="return">Return</label>
-                                <input type="date" id="return" placeholder="Return">
+                                <input type="date" id="return" placeholder="Return" value="2019-06-14">
                             </div>
                             <div class="inputGroup">
-                                <button class="btn btn-sec btn-form" @click="submit"> Search </button>
+                                <button class="btn btn-sec btn-form"> Search </button>
                             </div>
                         </div>
                     </div>

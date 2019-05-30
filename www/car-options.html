@@ -11,14 +11,14 @@
     <title>Car Rental</title>
 </head>
 
-<body>
+<body class="upsell">
     <div class="wrapper">
         <header class="header">
             <div class="container">
                 <a class="logo" href="index.html">
                     <i class="fas fa-car"></i> Rental
                 </a>
-                <div class="btn btn-main btn-nav">Login</div>
+                <div class="profile">Jon Doe <i class="fas fa-user"></i></div>
             </div>
         </header>
     </div>
@@ -44,13 +44,16 @@
                             <h4>Protection</h4>
                         </div>
                         <div class="upsell_subheader">
-                            <p>Order special protection for yourself and your car</p>
+                            <p>Order special protection for yourself and your car for only <span
+                                    class="strong">100</span> DKK</p>
                             <a href="#">Read more</a>
                         </div>
                         <div class="upsell_content">
                             <div class="flex">
-                                <input type="checkbox" name="consent" value="1">
-                                <p class="terms grow_3">I want to order special protection for myself and my car</p>
+                                <input type="checkbox" id="protection" name="protection" data-to-open="protection"
+                                    value="100">
+                                <label for="protection" class="terms grow_3">I want to order special protection for
+                                    myself and my car</label>
                             </div>
                         </div>
                     </div>
@@ -59,13 +62,15 @@
                             <h4>Addons</h4>
                         </div>
                         <div class="upsell_subheader">
-                            <p>Order more addons to make your journey more comfortable</p>
+                            <p>Order more addons to make your journey more comfortable for only <span
+                                    class="strong">200</span> DKK</p>
                             <a href="#">Read more</a>
                         </div>
                         <div class="upsell_content">
                             <div class="flex">
-                                <input type="checkbox" name="consent" value="1">
-                                <p class="terms grow_3">I want to order more addons to make my journey more plesant</p>
+                                <input type="checkbox" id="addons" name="addons" data-to-open="addons" value="200">
+                                <label for="addons" class="terms grow_3">I want to order more addons to make my journey
+                                    more plesant</label>
                             </div>
                         </div>
                     </div>
@@ -74,13 +79,13 @@
                             <h4>Safety</h4>
                         </div>
                         <div class="upsell_subheader">
-                            <p>Get more safety</p>
+                            <p>Get more safety for <span class="strong">300</span> DKK</p>
                             <a href="#">Read more</a>
                         </div>
                         <div class="upsell_content">
                             <div class="flex">
-                                <input type="checkbox" name="consent" value="1">
-                                <p class="terms grow_3">I want more safety.</p>
+                                <input type="checkbox" id="safety" name="safety" data-to-open="safety" value="300">
+                                <label for="safety" class="terms grow_3">I want more safety.</label>
                             </div>
                         </div>
                     </div>
@@ -114,43 +119,35 @@
                             </div>
                         </div>
                         <div class="car_column">
-                            <div class="car_content flex-grid">
-                                <div>
-                                    <div class="car-item"><i class="fas fa-users"></i>
-                                        <p><span>5</span> Passengers</p>
-                                    </div>
-                                    <div class="car-item"><i class="far fa-snowflake"></i>
-                                        <p>A/C included</p>
-                                    </div>
-                                    <div class="car-item"><i class="fas fa-cogs"></i>
-                                        <p>Automatic</p>
-                                    </div>
-                                    <div class="car-item"><i class="fas fa-gas-pump"></i>
-                                        <p>Electric</p>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="car-item"><i class="fas fa-info-circle"></i>
-                                        <p>Relevant info</p>
-                                    </div>
-                                    <div class="car-item"><i class="fas fa-info-circle"></i>
-                                        <p>Relevant info</p>
-                                    </div>
-                                    <div class="car-item"><i class="fas fa-info-circle"></i>
-                                        <p>Relevant info</p>
-                                    </div>
-                                    <div class="car-item"><i class="fas fa-info-circle"></i>
-                                        <p>Relevant info</p>
-                                    </div>
+                            <div class="car_content">
+                                <h5>Car info</h5>
+                                <div class="flex">
+                                    <p>Vehicle subtotal</p>
+                                    <p class="strong">550 DKK</p>
                                 </div>
                             </div>
                             <div class="car_extras border-bot">
-                                <div class="car-item"><i class="fas fa-plus"></i>
-                                    <p>EXTRAS</p>
+                                <h5>Extras</h5>
+                                <div class="flex protection">
+                                    <p>Protection</p>
+                                    <p class="strong">100 DKK</p>
+                                </div>
+                                <div class="flex addons">
+                                    <p>Addons</p>
+                                    <p class="strong">200 DKK</p>
+                                </div>
+                                <div class="flex safety">
+                                    <p>Safety</p>
+                                    <p class="strong">300 DKK</p>
                                 </div>
                             </div>
-                            <div class="">
-                                Total: 550 DKK
+                            <div class="car_summary">
+                                <h5>Summary</h5>
+                                <div class="flex">
+                                    <p>Total</p>
+                                    <p class="strong"><span id="total">550</span> DKK</p>
+                                </div>
+                                <a href="#" class="a-block link">Terms and conditions</a>
                             </div>
                         </div>
                         <!-- <div class="btn btn-main btn-car"> Buy for 550 Dkk </div> -->
@@ -161,4 +158,9 @@
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./js/app.min.js"></script>
+    <script>
+        $('.protection').hide();
+        $('.addons').hide();
+        $('.safety').hide();
+    </script>
 </body>

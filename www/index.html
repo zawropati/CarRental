@@ -20,7 +20,10 @@
                         <i class="fas fa-car"></i> Rental
                     </a>
                 </div>
-                <div class="btn btn-main btn-nav">Login</div>
+                <div>
+                    <div class="btn btn-main btn-nav" onclick="showModal(1)">Login</div>
+                    <div class="profile hidden">Jon Doe <i class="fas fa-user"></i></div>
+                </div>
             </div>
         </header>
         <main>
@@ -35,28 +38,28 @@
                         <div class="flex-grid">
                             <div class="inputGroup">
                                 <label class="label" for="country">Country</label>
-                                <input type="text" id="country" placeholder="Country">
+                                <input type="text" id="country" value="Denmark">
                             </div>
                             <div class="inputGroup">
                                 <label for="city">City</label>
-                                <input type="text" id="city" placeholder="City">
+                                <input type="text" id="city" value="Copenhagen">
                             </div>
                             <div class="inputGroup">
                                 <label for="location">Location</label>
-                                <input type="text" id="location" placeholder="Location">
+                                <input type="text" id="location" value="CPH Airport">
                             </div>
                         </div>
                         <div class="flex-grid">
                             <div class="inputGroup">
                                 <label for="pickup">Pickup</label>
-                                <input type="date" id="pickup" placeholder="Pickup">
+                                <input type="date" id="pickup" placeholder="Pickup" value="2019-06-10">
                             </div>
                             <div class="inputGroup">
                                 <label for="return">Return</label>
-                                <input type="date" id="return" placeholder="Return">
+                                <input type="date" id="return" placeholder="Return" value="2019-06-14">
                             </div>
                             <div class="inputGroup">
-                                <button id="searchBtn" class="btn btn-main btn-form"> Search </button>
+                                <button id="searchBtn" onclick="showModal(2)" class="btn btn-main btn-form"> Search </button>
                             </div>
                         </div>
                     </div>
@@ -123,11 +126,40 @@
                 </div>
             </section>
         </main>
-        <footer class="footer">
-            <div class="container">
-                FOOTER
+    </div>
+    <div class="modalContainer" data-id="1">
+        <div class="greyLayer" onclick="closeModal()">
+        </div>
+        <div id="modal" class="modal card">
+            <div class="formBox">
+                <div class="flexWrapperColumn">
+                    <div class="inputGroup">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" value="jonDoe22">
+                    </div>
+                    <div class="inputGroup">
+                        <label for="Password">Password</label>
+                        <input type="password" id="password" value="123456">
+                    </div>
+                    <div class="inputGroup">
+                        <button class="btn btn-main btn-form" onclick="loginUser()"> Log in </button>
+                    </div>
+                </div>
             </div>
-        </footer>
+        </div>
+    </div>
+    <div class="modalContainer" data-id="2">
+        <div class="greyLayer" onclick="closeModal()">
+        </div>
+        <div id="modal" class="modal card">
+            <div class="modal-center">
+                <h4>Loading offers</h4>
+                <div class="loader border-bot">
+                    <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+                </div>
+                <p>This will only take few seconds</p>
+            </div>
+        </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./js/app.min.js"></script>
